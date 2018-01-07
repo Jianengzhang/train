@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.hdu.train.pojo.StationNode" table="station_node">
+        <composite-id>
+            <key-property name="stationId1" column="station_id_1"/>
+            <key-property name="stationId2" column="station_id_2"/>
+            <key-property name="trainId" column="train_id"/>
+        </composite-id>
+        <property name="distance" column="distance"/>
+        <property name="arriveTime" column="arrive_time"/>
+        <property name="leaveTime" column="leave_time"/>
+        <property name="price1" column="price_1"/>
+        <property name="restSite1" column="rest_site_1"/>
+        <property name="price2" column="price_2"/>
+        <property name="restSite2" column="rest_site_2"/>
+        <property name="price3" column="price_3"/>
+        <property name="restSite3" column="rest_site_3"/>
+
+    </class>
+</hibernate-mapping>
+
